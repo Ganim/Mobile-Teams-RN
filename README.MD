@@ -1,4 +1,4 @@
-# App de Participantes de Evento - React Native 
+# App de Criação de Turmas - React Native 
 - Id do Projeto: `RN-02-IgniteTeams`
 - Data de Criação: `29-01-2024`
 - última atualização: `29-01-2024`
