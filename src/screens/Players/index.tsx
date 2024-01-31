@@ -1,25 +1,34 @@
-import { Header } from "@components/Header";
+import { useState } from "react";
+import { FlatList } from "react-native";
+import { useRoute } from "@react-navigation/native";
+
 import { Container, Form, HeaderList, NumberOfPlayers } from "./styles";
+
+import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
 import { Input } from "@components/Input";
 import { ButtonIcon } from "@components/ButtonIcon";
 import { Filter } from "@components/Filter";
-import { FlatList } from "react-native";
-import { useState } from "react";
 import { PlayerCard } from "@components/PlayerCard";
 import { ListEmpty } from "@components/ListEmpty";
 import { Button } from "@components/Button";
 
+type RouteParams = {
+  group: string
+}
+
 export function Players(){
   const [team, setTeam] = useState("Time A")
-  const [players, setPlayers] = useState(["Guilherme", "Fernando","A","B","C","D","E","F","G","H","I"])
+  const [players, setPlayers] = useState([])
+  const route = useRoute();
+  const {group} = route.params as RouteParams;
 
   return(
     <Container>
       <Header showBackButton />
 
       <Highlight
-        title="Nome da Turma" 
+        title={group}
         subtitle="Adicione a galera e separe os times"
       />
 
@@ -38,7 +47,7 @@ export function Players(){
 
       <HeaderList>
         <FlatList
-          data={["Time A", "Time B", "Time C", "Time D", "Time E"]}
+          data={["Time A", "Time B"]}
           keyExtractor={item => item}
           renderItem={({item})=>(
             <Filter 

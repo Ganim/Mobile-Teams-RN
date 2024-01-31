@@ -6,11 +6,19 @@ import { useState } from 'react';
 import { FlatList } from 'react-native';
 import { ListEmpty } from '@components/ListEmpty';
 import { Button } from '@components/Button';
+import { useNavigation } from '@react-navigation/native';
 
-export default function Groups() {
+export function Groups() {
 
   const [groups, setGroups] = useState(['Galera da Rocket', 'Amigos', 'A','B','C','D','E','F']);
 
+  const navigation = useNavigation();
+
+  function handleNewGroup(){
+    navigation.navigate('new')
+  }
+
+  
   return (
     <Container>
       <Header />
@@ -25,6 +33,7 @@ export default function Groups() {
         renderItem={({item}) => (
           <GroupCard 
             title={item}
+            onPress={()=> navigation.navigate('players', {group: item})}
           />
         )}
         contentContainerStyle={groups.length === 0 && { flex:1}}
@@ -37,6 +46,7 @@ export default function Groups() {
 
       <Button 
         title="Criar Nova Turma"
+        onPress={handleNewGroup}
       />
     </Container>
   );
