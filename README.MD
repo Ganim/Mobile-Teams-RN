@@ -1,7 +1,7 @@
 # App de Criação de Turmas - React Native 
 - Id do Projeto: `RN-02-IgniteTeams`
 - Data de Criação: `29-01-2024`
-- última atualização: `29-01-2024`
+- última atualização: `01-02-2024`
 - Material de Estudo: `RocketSeat` |  `React Native Documentation` 
 
 ## Sobre
