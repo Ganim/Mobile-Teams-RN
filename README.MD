@@ -24,8 +24,14 @@ Este é um aplicativo simples desenvolvido em React Native para fins de estudo. 
 
 ## Estrutura do Projeto
 - `/src`
+  - `/@types`: Tipografia para o Typescript.
+  - `/assets`: Imagens e demais arquivos de suporte.
   - `/components`: Componentes reutilizáveis.
+  - `/routes`: Rotas da aplicação.
   - `/screens`: Telas do aplicativo.
+  - `/storage`: Armazenamento de dados locais.
+  - `/theme`: Temas da aplicação.
+  - `/utils`: Funcionalidades úteis.
 
 ## Tecnologias Utilizadas
 - React Native
