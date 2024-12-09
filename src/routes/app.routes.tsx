@@ -1,4 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { EditGroup } from "@screens/EditGroup";
 import { Groups } from "@screens/Groups";
 import { NewGroup } from "@screens/NewGroup";
 import { Players } from "@screens/Players";
@@ -17,6 +18,11 @@ export function AppRoutes(){
       <Screen 
         name="new"
         component={NewGroup}
+      />
+
+      <Screen 
+        name="edit"
+        component={EditGroup}
       />
 
       <Screen 

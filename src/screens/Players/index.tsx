@@ -102,6 +102,10 @@ export function Players(){
     }
   }
 
+  function handleGroupEdit(group: string){
+    navigation.navigate('edit', { group })
+  }
+
   async function handleGroupRemove(){
     Alert.alert(
       'Remover',
@@ -198,6 +202,13 @@ export function Players(){
           />
       }
       
+      <Button 
+        title="Editar Turma"
+        type="PRIMARY"
+        onPress={()=> handleGroupEdit(group)}
+        
+      />
+
       <Button 
         title="Remover Turma"
         type="SECONDARY"

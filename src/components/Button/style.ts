@@ -10,6 +10,8 @@ type Props = {
 export const Container = styled(TouchableOpacity)<Props>`
   flex: 1;
 
+  margin: 8px 0;
+
   min-height: 56px;
   max-height: 56px;
 
