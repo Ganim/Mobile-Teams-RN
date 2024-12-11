@@ -1,8 +1,5 @@
 # App de Criação de Turmas - React Native 
-- Id do Projeto: `RN-02-IgniteTeams`
-- Data de Criação: `29-01-2024`
-- última atualização: `09-12-2024`
-- Material de Estudo: `RocketSeat` |  `React Native Documentation` 
+- Última atualização: `09-12-2024`
 
 ## Sobre
 Este é um aplicativo simples desenvolvido em React Native para fins de estudo. Ele permite adicionar e remover Turmas / Times / Participantes de um evento.
